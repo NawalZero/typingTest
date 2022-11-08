@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Typing Speed Test</title>
+    <script src="https://kit.fontawesome.com/4b903a7698.js" crossorigin="anonymous"></script>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+        type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>{ Type Master }</h1>
+        <i id="icon" class="fa-3x fa-solid fa-keyboard"></i>
+        <div class="few-buttons">
+            <ul>
+                <li class="buttons"><a href="#functions">About the game</a></li>
+                <li class="buttons"><a href="#origin-text">Start the game</a></li>
+                <li class="buttons"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <article class="intro">
+            <p>
+                <center>Welcome to Type Master, Typing Speed Tester!</center>
+            </p>
+        </article>
+        <div class="functions">
+            <div class="function-item">
+                <h3>Know Your Speed!</h3>
+                <p>This test will exactly show you how many Words Per Minute (WPM) you have typed indicating the typing
+                    speed of the user</p>
+            </div>
+            <div class="function-item">
+                <h3>Stopwatch!</h3>
+                <p>There is a feature of stopwatch which will accurately tell you how much time the user has taken to
+                    type the complete test</p>
+            </div>
+            <div class="function-item">
+                <h3>Know your errors on the go!</h3>
+                <p>The grey box around the typing section will turn red as soon as you make a typing error and this will
+                    alert the user to correct the mistake by backspacing</p>
+            </div>
+            <div class="function-item">
+                <h3>Multiple snippets to check the skillfulness</h3>
+                <p>There are different paragraphs for the user to play the game everytime they decide to start over to
+                    make it interesting and difficult</p>
+            </div>
+        </div>
+        <!-- .intro -->
+        <section class="test-area">
+            <div id="origin-text">
+                <p>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The
+                    timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</p>
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6"
+                    placeholder="Click here to start typing. The clock starts when you start typing."></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <!-- <section id="Words">
+                    <div class="wordCount">0 Words</div>
+                </section> -->
+
+                <section id="WordsPerMinute">
+                    <div class="wpm">0 WPM</div>
+                </section>
+
+                <section id="Accurate">
+                    <div class="accuracy">100%</div>
+                </section>
+
+                <button id="reset">Start over</button>
+            </div><!-- .meta -->
+        </section><!-- .test-area -->
+    </main>
+
+    <footer class="main-footer" id="contact">
+        <div class="container">
+            <div id="info">
+                <h2>{ Type Master }</h2>
+                <p>A typing test curated by Nawal Nautiyal with the aim of helping people improve their typing speed
+                    while maintaining the accuracy and keeping the time taken as least as possible</p>
+            </div>
+            <div id="contact-info">
+                <h2>My socials</h2>
+                <ul>
+                    <li class="social-icons"><a href="https://twitter.com/NawalNautiyal_"><i
+                                class="fa-3x fa-brands fa-twitter"></i></a></li>
+                    <li class="social-icons"><a href="https://www.instagram.com/mr.solitude._/"><i
+                                class="fa-3x fa-brands fa-instagram"></i></a></li>
+                    <li class="social-icons"><a href="https://www.youtube.com/channel/UC4rOKsH3Rj0fHcCKufL5b7Q"><i
+                                class="fa-3x fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2 class="m-heading text-center">Please use the below form to contact us</h2>
+                <form method="POST" data-netlify="true">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+
+                    <!-- <label for="phone">Phone Number</label> -->
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+
+
+                    <!-- <label for="message">Message</label> -->
+                    <textarea name="message" id="message" placeholder="Enter your message"> </textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2022 All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
